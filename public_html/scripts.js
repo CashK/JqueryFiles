@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 
+//crap//
 $("document").ready(function() {
    
     $('').css({'visibility': 'hidden', 'position': 'absolute'});
@@ -23,6 +24,7 @@ $("document").ready(function() {
     $("#head1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
 });
 
+//morecrap
 function mouseOverME() {
     $("#h1").html("MouseOn")
 }
@@ -31,3 +33,8 @@ function mouseOutME() {
     $("#h1").html("MouseOff");
     $("p").html("")
 }
+
+//thethingsection
+$("document").ready(function() {
+    $("#classes").css("color", "red");
+});

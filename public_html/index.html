@@ -9,58 +9,76 @@ and open the template in the editor.
         <title>JQueryFiles</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="css/style.css">
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     </head>
-    <body id="body1">
-        <header id="head1">
-            <nav>
-                <a href="thething.html">thething</a>
-            </nav>    
-        <h1><b>F-80C Shooting Star</b></h1>
-        </header>
+    <body>
         
-        <article id="article1">
+        <div id="numbers">
+          <p>
+                <h3>The Most Important Numbers</h3>
+                <table>
+                    <tr>
+                    <th>Number</th>
+                    <th>Why I Care</th>
+                    </tr>
+                    <tr>
+                    <td>2012</td>
+                    <td>Year We All Die</td>
+                    </tr>
+                    <tr>
+                    <td>12-21-12</td>
+                    <td>My Next Birthday</td>
+                    </tr>
+                    <tr>
+                    <td>12-21-12</td>
+                    <td>The Day We All Die</td>
+                    </tr>
+                </table>
+                
+          </p>
+        </div>
         
-            <p id="para1">
-            An all-metal, single-seat fighter-bomber with one turbojet engine.
-            The aircraft was created by a group of Lockheed engineers (headed by <b>Clarence "Kelly" Johnson</b>) in only 143 days.
-            The first flight of the <b>XP-80</b> prototype was performed in January 1944. 
-            The first production version, designated the <b>P-80A Shooting Star</b>, entered service in 1946. The P-80 became 
-            the first combat-capable jet aircraft to enter service with the USAAF.
-            1947 saw the appearance of the next production version of the aircraft,
-            the P-80B. The ninth production P-80A-1 was converted to a new prototype,
-            designated the XP-80B. It had an <b>Allison J33-A-17</b> turbojet engine producing
-            1,816 kg of thrust, equipped with a methanol-water injection system.
-            </p>
+        <div id="randinfo">
+            <h3>The Most Powerful Superhumans</h3>
+                <ul id="superhumans">
+                    <li class="unknown">Beyonder</li>
+                    <li class="villian">Galactus</li>
+                    <li class="hero">Franklin Richards</li>
+                    <li class="hero">Reed Richards</li>
+                </ul>
+                <p><h4>Who Do You Think is Most Powerful?</h4></p>
+                <h6>Very Small</h6>
+        </div>
+        <!--Video 1-->
         
-            <p id="para2">
-            The airfoil was thinner, but the skin's thickness was increased. 
-            To install a water mixture tank, the plane's fuel quantity had to be
-            sacrificed by reducing it from 1,781 to 1,610 liters The aircraft also
-            received a Lockheed-designed ejection seat and a cockpit air-conditioning system.
-            The plane's armament consisted of six <b>12.7 mm Colt-Browning M3 machine
-            guns</b> with 300 rounds each in the forward fuselage. One <b>1,000 lb (454 kg)
-            bomb</b> or ten <b>5-inch (127 mm) unguided HVAR</b> missiles could be suspended under each wing panel.
-            A total of 240 P-80B fighter-bombers were built from March 1947 to March 1948, including 
-            P-80B-1s and 31 P-80B-5s. The В-5 variant was intended to be operated in Arctic conditions;
-            its heated canopy prevented icing. In addition, special types of oil and special rubber
-            were used to operate the aircraft in low temperature conditions.
-            At least five <b>P-80Bs</b> were equipped with a guidance system for <b>Bell
-            GAM-63 RASCAL air-to-surface missiles</b>.
-            </p>
+        <!--Video 2-->
+        <div id="firstDiv">
+            <h4>First Header</h4>
+                <p id="firstPara">First paragraph in first div<span> First
+           Span</span></p>
+                <p>Second paragraph in first div</p>
+                <p>Third paragraph in first div</p>
+        </div>
         
-            <p id="para3">
-            Externally, these aircraft differed in the shape of the forward fuselage and the wing-mounted
-            tanks. Also, they were fitted with extra spoilers on the upper and lower wing surfaces.
-            In June 1948, when the US military aircraft designation system was
-            changed, the P-80B was renamed to the F-80B. When the Korean War 
-            started, F-80Bs were stationed in the USA and in Europe, being used
-            by the USAAF mainly for training purposes. Later, 117 F-80Bs were 
-            brought up to the F-80C's standards and re-designated "F-80C-12." 
-            The remaining F-80Bs were withdrawn from service by the end of 1951.
-            </p>
-            
-        </article>
+        <div id="secondDiv">
+          <h4>Second Header</h4>
+              <p>First paragraph in second div<span> Second Span</span></p>
+              <p>Second paragraph in second div</p>
+              <p>Third paragraph in first div</p>
+        </div>
+        
+        <div id="thirdDiv">
+          <h4>Third Header</h4>
+              <p>First paragraph in third div<span> Third Span</span></p>
+              <p>Second paragraph in third div</p>
+              <p>Third paragraph in third div</p>
+        </div>
+        
+        <span id="clickToHide">Click to hide me</span>
+        
+        <input type="button" id="bringItBack" value="Bring Back" />
+        <!--Video 2-->
         <script type="text/javascript" src="scripts.js"></script>
     </body>
 </html>

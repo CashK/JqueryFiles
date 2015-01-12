@@ -4,37 +4,70 @@
  * and open the template in the editor.
  */
 
-//crap//
 $("document").ready(function() {
-   
-    $('').css({'visibility': 'hidden', 'position': 'absolute'});
     
     $("td").css("padding", "6px 10px");
-    $(".hero").css("color", "red");
-    $("ul li.villian").css("background-color", "yellow");
-    $("#article1").css("background-color", "lightgray");
-    $("#article1").css("border-style", "ridge");
-    $("h3, th").css("background-color", "orange");
-    $("p + h3").css("background-color", "purple");
-    $("#head1 ~ h1,b").css("background-color", "red");
-    $("#head1 ~ h1,b").css("border-style", "solid");
-    $("#superhumans > *").css("font-style", "italic");
-    $("#html1").css("background-color", "darkgray");
     
-    $("#head1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
+    $(".hero").css("color", "red");
+    
+    $("ul li.villian").css("background-color", "yellow");
+    
+    $("h3, th").css("background-color", "orange");
+    
+    $("p + h3").css("background-color", "purple");
+    
+    $("#randstuff ~ h4,h5").css("background-color", "purple");
+    
+    $("#superhumans > *").css("font-style", "italic");
+    
+    $("div:has(h4)").css("text-decoration", "underline");
+    
+    $("div[id]").css("border", "3px solid black");
+    
+    $("li[class= 'hero']").css("border", "2px solid blue");
+    
+    $("li[class^= 'v']").css("border", "2px solid purple");
+    
+    $("li[class$= 'wn']").css("border", "2px solid orange");
+    
+    $("li:contains('Richards')").css("background-color", "cyan");
+    
+    $("#numbers tr:odd").addClass("nice");
+    
+    $("#numbers tr").mouseover(function() { $(this).addClass("mouseon"); });
+    $("#numbers tr").mouseout(function() { $(this).removeClass("mouseon");
+    });
 });
+//Video 1
 
-//morecrap
-function mouseOverME() {
-    $("#h1").html("MouseOn")
-}
-
-function mouseOutME() {
-    $("#h1").html("MouseOff");
-    $("p").html("")
-}
-
-//thethingsection
+//Video 2
 $("document").ready(function() {
-    $("#classes").css("color", "red");
+    
+    $('p:last').css({"background-color": "purple", "color": "white"});
+    
+    $("p span:first-child").css("background-color", "orange");
+    
+    $("div p:last-child").css("background-color", "cyan");
+    
+    $("div :nth-child(1)").css("background-color", "pink");
+    
+    $("div :eq(2)").css("background-color", "purple");
+    
+    $("h4:lt(2)").css("background-color", "olive");
+    
+    $("#clickToHide").click(function() {
+        $("#clickToHide").hide(); });
+    
+    $('#bringItBack').click(function() {
+        if ($('#clickToHide').is(':visible')) {
+            $('#clickToHide').fadeOut(2000);
+            $(this).val('Bring Back');
+        }
+        else
+        {
+            $('#clickToHide').fadeIn(2000);
+            $(this).val('Delete Text');
+        }
+    }); 
 });
+//Video 2
